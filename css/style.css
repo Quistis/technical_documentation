@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 290px;
+    width: 300px;
+    height: 100%;
+    border-right: solid #000000 2px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header-container header {
+    font-size: 26px;
+}
+
+#navbar ul {
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    border-top: solid #000000 1px;
+}
+
+#navbar a{
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#navbar a:visited {
+    color: #000000;
+}
+
+#navbar a:hover {
+    color: purple;
+}
+
+#main-doc {
+    margin-left: 320px;
+    padding: 20px;
+}
+
+.main-section__header {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.main-section__article {
+    margin: 15px;
+}
+
+.main-section p {
+    margin: 10px 0 18px 0;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    font-size: 12px;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.main-section__article img {
+    display: block;
+    width: 800px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.page-list {
+    margin: 16px 0 32px 0;
+    padding-left: 50px;
+}
+
+.page-list__item {
+    margin: 10px 0;
+}
+
+.page-item {
+    margin: 10px 0;
+}
+
+.main-section .inline-code {
+    display: inline;
+    padding: 2px 4px;
+    margin: 0;
+}
+
+.main-section ol {
+    margin: 16px 0 32px 0;
+    padding-left: 50px;
+}
+
+ol .list-code {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.main-section span {
+    margin: 10px 0;
+    padding-left: 15px;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
